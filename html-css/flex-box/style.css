@@ -1,0 +1,46 @@
+ 
+ .aqua{
+    display: flex;
+    justify-content: center;
+ }
+
+ .box2{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ }
+
+ .box3{
+  display: flex;
+  justify-content: end;
+
+ }
+ .box-container{
+    position:relative;
+ 
+ }
+
+ .advance1{
+ display: flex;
+ }
+  
+ .child-advance{
+  display: flex;
+  justify-content: end;
+  width: 300px;
+
+ }
+
+
+ .advance2{
+    position: absolute;
+    display:flex;
+    bottom: 0;
+ }
+ .child-advance2{
+    display: flex;
+    
+    width: 250px;
+    justify-content: right;
+  
+   }

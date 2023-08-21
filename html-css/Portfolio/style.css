@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@100;400;500;700;900&display=swap');
+ *{
+    margin:0;
+    padding: 0;
+
+ }
+
+ body{
+    background-image: linear-gradient(black, rgb(161, 161, 204));
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:120vh;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    margin-bottom: 10%;
+   
+ }
+
+  
+ .container{
+    padding: 10px 10px;
+    width: 800px;
+    height: 110vh;
+    background-color: rgb(18, 155, 209);
+    position: absolute;
+    transform: translate(-50% -50%);
+    left: 30%;
+    top: 10%;
+  
+   
+ }
+ 
+
+ .left-container{
+    width: 50%;
+    height: 110vh;
+    position: relative;
+    background-color: aqua;
+    box-shadow: 1px 5px 20px aqua;
+    
+ }
+
+ .top-banner{
+    width:100%;
+    height: 300px;
+    background-color: #fffbfb;
+ }
+ 
+ .profile-image{
+    position: absolute;
+    top:7%;
+    left: 10%;
+    border:6px solid aqua;
+    border-radius: 50%;
+    box-shadow: 1px 8px 20px aqua;
+    
+ }
+ .profile-image img{
+    width: 100%;
+    border-radius: 50%;
+ }
+ 
+ .bottom{
+    width: 100%;
+    height: 200px; 
+    
+ }
+ .name{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+ }
+ 
+ .name-container{
+    font-weight: bold;
+    color:white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-align: center;
+
+}
+.name h2{
+    border-bottom: 5px solid white;
+    padding-bottom: 3px;
+}
+
+.box-details{
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+}
+.contact{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 95%;
+    font-size: 15px;
+    padding:10px;
+     font-weight: bold;
+     color: aqua;
+     background-color: rgb(138, 135, 135);
+}
+ 
+ 
+.contact i {
+    font-size: 35px;
+    margin-left: 5px;
+}
+
+.detail-list{
+    margin-top: 20px;
+}
+.detail-list li {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    margin-left: 20px;
+    margin-top:10px;
+    list-style: none;
+
+}
+
+.detail-list p {
+margin-left: 10px;
+
+}
+
+.p1{
+    margin:10px 0;
+    font-weight:bold;
+}
+.level-container{
+    
+   width: 90%;
+   background-color: black;
+   margin: 0 10px;
+   
+}
+
+.skill{
+    text-align: right;
+    padding-top:2px;
+    padding-bottom: 2px;
+    color:rgb(252, 252, 252);
+}
+.html{
+    width: 90%;
+    background-color: white;
+}
+.css{
+    width:80%;
+    background-color: white;
+ 
+}
+
+.js{
+    width:50%;
+    background-color: white;
+  
+}
+.icons{
+    margin-top: 40px;
+    text-align: center;
+}
+.icons ul li{
+    display: inline;
+    list-style: none;
+    margin:10px 15px
+}
+
+.icons i {
+  
+    font-size: 40px;
+}
+
+.right{
+    width: 48%;
+    height: 420px;
+    position: absolute;
+    top:0px;
+    left: 420px;
+   
+    margin-top: 10px;
+}
+
+.aboutme-container{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.about-me{
+    margin-top:50px;
+}
+.aboutme-container h2{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    
+}
+.aboutme-container i{
+     margin-left: 10px;
+}
+
+
+.aboutme-container p{
+font-size: 16px;
+ text-align: justify;
+ width: 90%;
+ text-indent: 20px;
+ color: rgb(7, 7, 7);
+ font-weight: bold;
+ word-spacing: 1px;
+ line-height: 30px;
+}
+
+ .work{
+    margin-top: 80px;
+ }
+ 
+.aboutme-container li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    list-style: none;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    
+    
+}
+
+#work-p{
+    font-size: 20px;
+    color: white;
+}
+
+.prgraph {
+    margin-bottom: 10px;
+  }
+
+.prgraph p{
+  margin-left: 40px;
+}

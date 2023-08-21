@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.device-holder{
+    height: 90vh;
+    margin:10px 20%;
+    border: 2px solid black;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  1fr 1fr;
+    grid-template-rows: 70px 70px 70px 70px 70px 70px 70px  70px 70px 70px 70px 70px ;
+
+}
+
+.mobile{
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+.tablet{
+    grid-column: 1/9;
+    grid-row: 6/7;
+}
+ 
+.image-holder{
+    grid-column: 2/3;
+    grid-row: 5/8;
+}
+.computer{
+    grid-column: 1/10;
+    grid-row: 11/12;
+}
+ 
+/*styling elements*/
+
+.mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: white;
+    width: 100%;
+    height: 50px;
+    background-color: #162040 ;
+}
+
+.tablet{
+  
+    height: 50px;
+    width: 100%;
+    background-color: #162040;
+  
+     
+}
+
+.tablet-navigation{
+     
+    display: flex;
+    justify-content: end;
+    padding-right: 60px;
+    margin-top: 10px;
+    color: white;
+   
+}
+.tablet-navigation p {
+    font-size: 30px;
+    margin-left: 27px;
+    font-family: sans-serif;
+
+}
+ 
+.image-holder{
+     margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.computer{
+    display: flex;
+    width:100%;
+    height: 50px;
+    background-color: #162040;
+}
+.computer-navigation{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    color: white;
+     padding-right: 60px;
+     margin-top: 10px;
+     
+
+}
+.computer-navigation p{
+    font-size: 30px;
+    margin-left: 27px;
+    font-family: sans-serif;
+
+}
+
+.computer-logo-holder{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:50px;
+    color:white;
+    font-size: 30px;
+    font-family: sans-serif;
+    
+
+}
+
+
+.mobile{
+    display:none;
+}
+.tablet{
+    display:none;
+}
+.image-holder{
+    display:none;
+}
+
+
+
+@media only screen and (mni-width:320px) {
+     .mobile{
+        display: block;
+     }
+
+
+    }
+
+    @media only screen and (min-width:768px) {
+        .tablet{
+           display: block;
+        }
+   
+        .image-holder{
+            display:block;
+        }
+        .computer{
+            display: none;
+        }
+        .mobile{
+            display: none;
+        }
+       }
+
+       @media only screen and (min-width:1024px) {
+        .computer{
+            display: block;
+        }
+        .tablet{
+           display: none;
+        }
+   
+        .image-holder{
+            display:none;
+        }
+        
+        .mobile{
+            display: none;
+        }
+       }
