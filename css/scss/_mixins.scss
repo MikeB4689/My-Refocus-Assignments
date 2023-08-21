@@ -1,0 +1,35 @@
+    @mixin border-left-rigth(){
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+    }
+
+    @mixin border-up-down{
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+    }
+
+    @mixin ellipse_vertical(){ 
+  width: 90px;
+  height: 180px;
+  border-radius: 50%;
+}
+@mixin ellipse_horizontal(){
+  width: 180px;
+  height: 90px;
+  border-radius: 50%;
+
+}
+@mixin rectangle_horizontal(){
+      width: 120px;
+  height: 80px;
+}
+
+@mixin rectangle_vertical(){
+    width: 80px;
+  height: 120px;
+}
+   

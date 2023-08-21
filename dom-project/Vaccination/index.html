@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Vaccination Form</title>
+</head>
+
+<body>
+    <div class="body-container">
+        <header>
+            <h1> Welcome to our Vaccinantion Form</h1>
+        </header>
+
+        <main>
+
+            <form name="SignUp">
+                <div class="personalInfo_conatainer">
+                    <h3>Please Sign Up the form</h3>
+
+                    <label class="labelinformation">Personal Information</label>
+
+                    <div class="info-container">
+                        <div id="error-fname" class="error"></div>
+                        <input type="text" name="fname" placeholder="Firstname">
+
+                    </div>
+                    <div class="info-container">
+                        <div id="error-lname" class="error"></div>
+                        <input type="text" name="lname" placeholder="Lastname">
+
+
+                    </div>
+                    <div class="info-container">
+                        <div id="error-midname" class="error"></div>
+                        <input type="text" name="midname" placeholder="Middlename">
+
+
+                    </div>
+                    <div class="info-container">
+                        <div id="error-dateofbirht" class="error"></div>
+                        <input type="date" name="dateofbirht" placeholder="Date of Birth">
+
+
+                    </div>
+
+                    <div class="info-container">
+                        <div id="error-email" class="error"></div>
+                        <input type="email" name="email" placeholder="Email Address">
+
+                    </div>
+
+
+                    <div class="info-container">
+                        <div id="error-province" class="error"></div>
+                        <input type="text" name="province" placeholder="Province">
+
+                    </div>
+                    <div class="info-container">
+                        <div id="error-barangay" class="error"></div>
+                        <input type="text" name="barangay" placeholder="Barangay">
+
+                    </div>
+
+                    <div class="info-container">
+                        <div id="error-street" class="error"></div>
+                        <input type="text" name="street" placeholder="Street">
+
+                    </div>
+                    <div class="info-container" id="radio-btn">
+
+
+                        <div class="radio-button">
+                            <div id="error-answerGender" class="error"></div>
+                            <label>Gender</label>
+                            <label>Male</label>
+                            <input type="radio" name="answerGender" value="Male" class="gender">
+                            <label>Female</label>
+                            <input type="radio" name="answerGender" value="Female" class="gender">
+                            <label>Other</label>
+                            <input type="radio" name="answerGender" value="Other" class="gender">
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-container" id="radio-btn">
+                        <div id="error-answerQuestion" class="error"> </div>
+
+                        <div class="radio-button">
+                            <label>Did you get your first vaccination?</label>
+                            <label>Yes</label>
+                            <input type="radio" class="questionONe" name="answerQuestion" value="Yes">
+                            <label>No</label>
+                            <input type="radio" class="questionONe" name="answerQuestion" value="No">
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-container" id="radio-btn">
+                        <div id="error-answerQuestion2" class="error"></div>
+
+                        <div class="radio-button">
+                            <label>Did you get your Second vaccination?</label>
+                            <label>Yes</label>
+                            <input type="radio" class="questionTwo" name="answerQuestion2" value="Yes">
+                            <label>No</label>
+                            <input type="radio" class="questionTwo" name="answerQuestion2" value="No">
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="vaccinationInfo_container">
+
+                    <div class="info-container" id="region">
+
+                        <label>Region</label>
+                        <select name="region" id="regionOption">
+                            <option value="">--Select One--</option>
+                            <option value="Ilocons Region">Region I</option>
+                            <option value="Cagayan Valley">Region II</option>
+                            <option value="Central Luzon">Region III</option>
+                            <option value="CALABARZON">Region IV</option>
+                            <option value="MIMAROPA Region">Region V</option>
+                            <option value="Bicol Region">Region VI</option>
+                            <option value="Western Visayas">Region VII</option>
+                            <option value="Central Visayas">Region VIII</option>
+                            <option value="Eastern Visayas">Region IX</option>
+                            <option value="Zamboanga Peninsula">Region X</option>
+                            <option value="Northern Mindanao">Region XI</option>
+                            <option value="SOCCSKSARGEN">Region XII</option>
+                            <option value="Caraga">Region XIII</option>
+                            <option value="National Capital Region">NCR</option>
+                            <option value="Cordillera Administrative Region">CAR</option>
+                            <option value="Bangsamoro Autonomous Region in Muslim Mindanao">BARM</option>
+                        </select>
+
+                    </div>
+                    <div class="info-container" id="answer_field">
+                        <input type="text" id="regionAnswer" placeholder="Please select Region">
+                    </div>
+                    <div id="error-region" class="error"></div>
+
+
+                    <div class="vaccination-Dose">
+                        <label class="Dose-label">Vaccination Dose I</label>
+                        <select id="Brands">
+                            <option value="">Please Select Brand</option>
+                            <option value="Pfizer BioNTech">Pfizer BioNTech</option>
+                            <option value="AstraZeneca">AstraZeneca</option>
+                            <option value="Coronavac">Coronavac</option>
+                            <option value="Sputnik V">Sputnik V</option>
+                            <option value="Janssen">Janssen</option>
+                            <option value="Covaxin">Covaxin</option>
+                            <option value="Moderna">Moderna</option>
+                            <option value="Sinopharm">Sinopharm</option>
+                            <option value="Covovax">Covovax</option>
+                        </select>
+                        <div class="info-container" id="answer_field">
+                            <div class="error-message"></div>
+                            <input type="text" id="brandAnswer" placeholder="Please select Brand">
+                        </div>
+
+
+                        <div class="info-container" id="answer_field">
+                            <input type="text" name="dateofvaccination" id="vacDate">
+
+
+                        </div>
+                        <div class="info-container" id="answer_field">
+                            <div id="error-vacccination_loc" class="error"></div>
+
+                            <input type="text" id="vacccination_loc" placeholder="Vaccination Location">
+                        </div>
+
+                        <div class="info-container" id="answer_field">
+                            <div id="error-remark" class="error"></div>
+                            <textarea placeholder="remarks" name="remark" id="remarkarea"></textarea>
+
+                        </div>
+
+
+
+
+                    </div>
+
+                    <button type="submit" class="clickBtn" name="submit">Submit</button>
+                    <button type="reset" class="clickBtn" name="reset" id="res">Reset</button>
+
+
+            </form>
+
+
+
+        </main>
+
+        <footer>All rights reserve@2023</footer>
+    </div>
+
+    <script src="index.js">
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+@use 'variable';
+
+@use 'mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: variable.$spacer;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  gap: variable.$spacer;
+  place-items: center;
+}
+
+.triangle-left {
+ @include mixins.border-left-rigth();
+border-right: variable.$border_left;
+
+}
+
+
+.triangle-right {
+ @include  mixins.border-left-rigth();
+  border-left: variable.$border_right;
+}
+
+.triangle-up {
+  @include mixins.border-up-down();
+  border-bottom: variable.$border_up;
+}
+
+.triangle-down{
+  @include mixins.border-up-down();
+  border-top: variable.$border_down;
+}   
+
+.ellipse-vertical {
+ @include mixins.ellipse_vertical();
+
+}
+
+.ellipse-horizontal{
+    @include mixins.ellipse_horizontal();
+}
+
+
+.rectangle-horizontal {
+@include mixins.rectangle_horizontal()
+}
+
+.rectangle-vertical{
+    @include mixins.rectangle_vertical()
+}
+.red{
+    background-color:variable.$color_red;
+}
+.blue{
+    background-color: variable.$color_blue;
+}
+.green{
+    background-color: variable.$color_green;
+}
+
+.orange{
+    background-color: variable.$color_orange;
+}
