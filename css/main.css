@@ -14,8 +14,8 @@ body {
 
 form {
   background-color: grey;
-  width: 90vw;
-  height: 50vh;
+  width: 700px;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,8 +43,8 @@ form button {
 
 header {
   background-color: blue;
-  width: 90vw;
-  height: 10vh;
+  width: 700px;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
