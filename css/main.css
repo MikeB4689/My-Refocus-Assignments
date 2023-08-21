@@ -1,84 +1,62 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-.container {
-  padding: 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: repeat(3, 1fr);
-  gap: 50px;
-  place-items: center;
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.triangle-left {
-  width: 0;
-  height: 0;
-  border-top: 100px solid transparent;
-  border-bottom: 100px solid transparent;
-  border-right: 100px solid blue;
+form {
+  background-color: grey;
+  width: 90vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-direction: column;
+}
+form label {
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+form input {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 20px;
+}
+form button {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
 }
 
-.triangle-right {
-  width: 0;
-  height: 0;
-  border-top: 100px solid transparent;
-  border-bottom: 100px solid transparent;
-  border-left: 100px solid green;
-}
-
-.triangle-up {
-  width: 0;
-  height: 0;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  border-bottom: 100px solid orange;
-}
-
-.triangle-down {
-  width: 0;
-  height: 0;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  border-top: 100px solid red;
-}
-
-.ellipse-vertical {
-  width: 90px;
-  height: 180px;
-  border-radius: 50%;
-}
-
-.ellipse-horizontal {
-  width: 180px;
-  height: 90px;
-  border-radius: 50%;
-}
-
-.rectangle-horizontal {
-  width: 120px;
-  height: 80px;
-}
-
-.rectangle-vertical {
-  width: 80px;
-  height: 120px;
-}
-
-.red {
-  background-color: red;
-}
-
-.blue {
+header {
   background-color: blue;
+  width: 90vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  font-family: 5rem;
+  color: white;
+  font-family: sans-serif;
 }
 
-.green {
-  background-color: green;
-}
-
-.orange {
-  background-color: orange;
+.message {
+  color: white;
+  font-size: 2rem;
+  font-family: sans-serif;
 }/*# sourceMappingURL=main.css.map */

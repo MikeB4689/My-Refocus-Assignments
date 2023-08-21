@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+ body{
+    width: 100vw;
+    height: 100vh;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ form{
+    background-color: grey;
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-direction: column;
+    label{
+        font-size: 2rem;
+        font-family: sans-serif;
+
+    }
+    input{
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: bold;
+        padding:5px;
+        font-size: 20px;
+    }
+    button{
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+    }
+ }
+ header{
+    background-color: blue;
+     width: 90vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-family: 5rem;
+        color: white;
+        font-family: sans-serif;
+    }
+ }
+
+ .message{
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+ }
